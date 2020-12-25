@@ -1,0 +1,273 @@
+/*Global Things*/
+body, html{
+  margin:  1vw; 
+	padding: 2vw 5vw;
+  font-size:1.5vw;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+img{
+  max-width:100%;
+  height:auto;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  background: #212121;
+  font-family: Androgyne;
+  background-image: url('../images/img/s1.png'), url('../images/img/s2.png'), url('../images/img/s3.png');
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+    -webkit-animation: snow 10s linear infinite;
+    -moz-animation: snow 10s linear infinite;
+    -ms-animation: snow 10s linear infinite;
+    animation: rgb(251, 255, 250) 10s linear infinite;
+}
+
+@keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-moz-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 400px 1000px, 200px 400px, 100px 300px;}
+}
+@-webkit-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-ms-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+
+/*NAVBAR CONTENT*/
+.navbar {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 120%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 12vw;
+    background-color: #2a2436;
+    position: fixed;
+    height:100%;
+    overflow: auto;
+  }
+  
+  li a {
+    display: block;
+    color: #ddd;
+    padding: 5% 5%;
+    text-decoration: none;
+  }
+  
+  li a.active {
+    background-color: #514c5a;
+    color: white;
+    padding: 5% 5%;
+  }
+  
+  li a:hover:not(.active) {/*Genero sobreposição*/
+    background-color: #555;
+    color: white;
+  }
+
+  /*DROPDOWN NAVBAR*/
+.dropdown{
+  position: relative;
+  display: inline;
+}
+
+.dropdown-content{
+  display: none;
+  position: relative;
+  background-color: #202020;
+  min-width: auto;
+  box-shadow: 1px 8px 16px 0px rgba(174, 0, 255, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  padding: 12% 30%;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {background-color: #514c5a;}/*sobreposição de cor de tema genero*/
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .droplist {background-color:#514c5a;}/*Sobreposição de genro*/
+
+/*///////////////////////////////////////////////*/
+.Titles{
+  text-align: center;
+  color: #ddd;
+}
+/*-----------------------------------------------*/
+footer {
+  background-color: #2a2436;
+  bottom: 0;
+  left: 0;
+  height: 3%;
+  position: fixed;
+  width: 100vw;
+  font-size: 1vw;
+  }
+/*-----------------------------------------------*/
+  .geral{
+    width: 60vw;
+    text-align: center;
+    color: #ddd;
+    margin: 1vw 23vw;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .cabecalho{
+    height: 10vw;
+  }
+  .logo{
+    float: left;
+  }
+  .logo a{
+    font-size:3vw;
+    font-style:bold;
+    text-decoration:none;
+    color:rgb(255, 0, 0);
+    display: flex;
+    padding:1vw 15vw 0 0;
+  }
+  #serch{
+    float: left;
+    position: relative;
+    margin-top: 1vw;
+    margin-right: 1vw;
+  }
+
+/*Index*/
+  .corpo{
+    position:relative;
+    overflow:hidden;
+  }
+  .artigos{
+    float:left;
+  }
+  .artigos, .artigos:before{
+    width:70%;
+  }
+  .artigos:before{
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    background:#2a2436;
+    z-index:-1;
+    content:'';
+  }
+  .barra-lateral{
+    float:right;
+    font-size: 1.3vw;
+    padding: 1vw 0;
+  }
+  .barra-lateral, .barra-lateral:before{
+    width: 30%;
+  }
+  .barra-lateral:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right:0;
+    z-index: -1;
+    background: #2a2436;
+  }
+  .espacamento{
+    padding:1vw;
+  }
+
+.arefhomepage, a{
+  color: #ddd;
+}
+
+/*Paginas de Jogos*/
+
+.artigos2{
+  float:left;
+}
+.artigos2, .artigos2:before{
+  width:40%;
+}
+.artigos2:before{
+  position:absolute;
+  top:0;
+  left:0;
+  bottom:0;
+  background:#2a2436;
+  z-index:-1;
+  content:'';
+}
+.barra-lateral2{
+  float:right;
+  font-size: 1vw;
+}
+.barra-lateral2, .barra-lateral2:before{
+  width: 60%;
+}
+.barra-lateral2:before{
+   content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right:0;
+    z-index: -1;
+    background: #2a2436;
+}
+.espacamento2{
+  padding:2vw;
+  font-size: 1vw;
+}
+
+.arefhomepage{
+color: #ddd;
+}
+
+.barra-lateral3{
+  float: right;
+}
+.barra-lateral3, .barra-lateral3:before{
+  width: 100%;
+}
+.barra-lateral3:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right:0;
+  z-index: -1;
+  background: #2a2436;
+}
+
+/*pagina A-Z*/
+.A_Zstyle{
+  text-align: center;
+}
+.ahref_line{
+  color: #ddd;
+  font-family: Arial;
+}
+/*Crossplay page*/
+
+#h1crossplay {
+  color: #ddd;
+}
+
+
