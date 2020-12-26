@@ -53,35 +53,35 @@ body{
 
 /*NAVBAR CONTENT*/
 .navbar {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 120%;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 12vw;
-    background-color: #2a2436;
-    position: fixed;
-    height:100%;
-    overflow: auto;
-  }
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 120%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 12vw;
+  background-color: #2a2436;
+  position: fixed;
+  height:100%;
+  overflow: auto;
+}
   
-  li a {
-    display: block;
-    color: #ddd;
-    padding: 5% 5%;
-    text-decoration: none;
-  }
-  
-  li a.active {
-    background-color: #514c5a;
-    color: white;
-    padding: 5% 5%;
-  }
-  
-  li a:hover:not(.active) {/*Genero sobreposição*/
-    background-color: #555;
-    color: white;
-  }
+li a {
+  display: block;
+  color: #ddd;
+  padding: 5% 5%;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: #514c5a;
+  color: white;
+  padding: 5% 5%;
+}
+
+li a:hover:not(.active) {/*Genero sobreposição*/
+  background-color: #555;
+  color: white;
+}
 
   /*DROPDOWN NAVBAR*/
 .dropdown{
@@ -124,81 +124,80 @@ footer {
   width: 100vw;
   font-size: 1vw;
   }
-/*-----------------------------------------------*/
-  .geral{
-    width: 60vw;
-    text-align: center;
-    color: #ddd;
-    margin: 1vw 23vw;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  .cabecalho{
-    height: 10vw;
-  }
-  .logo{
-    float: left;
-  }
-  .logo a{
-    font-size:3vw;
-    font-style:bold;
-    text-decoration:none;
-    color:rgb(255, 0, 0);
-    display: flex;
-    padding:1vw 15vw 0 0;
-  }
-  #serch{
-    float: left;
-    position: relative;
-    margin-top: 1vw;
-    margin-right: 1vw;
-  }
+/*---------------ALL pages--------------------------------*/
+.geral{
+  width: 60vw;
+  text-align: center;
+  color: #ddd;
+  margin: 1vw 23vw;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.cabecalho{
+  height: 10vw;
+}
+.logo{
+  float: left;
+}
+.logo a{
+  font-size:3vw;
+  font-style:bold;
+  text-decoration:none;
+  color:rgb(255, 0, 0);
+  display: flex;
+  padding:1vw 15vw 0 0;
+}
+.login-register{
+  float: right;
+  font-size: 1.2vw;
+}
 
-/*Index*/
-  .corpo{
-    position:relative;
-    overflow:hidden;
-  }
-  .artigos{
-    float:left;
-  }
-  .artigos, .artigos:before{
-    width:70%;
-  }
-  .artigos:before{
-    position:absolute;
-    top:0;
-    left:0;
-    bottom:0;
-    background:#2a2436;
-    z-index:-1;
-    content:'';
-  }
-  .barra-lateral{
-    float:right;
-    font-size: 1.3vw;
-    padding: 1vw 0;
-  }
-  .barra-lateral, .barra-lateral:before{
-    width: 30%;
-  }
-  .barra-lateral:before{
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right:0;
-    z-index: -1;
-    background: #2a2436;
-  }
-  .espacamento{
-    padding:1vw;
-  }
-
+/*##################Index##################*/
+.corpo{
+  position:relative;
+  overflow:hidden;
+}
+.artigos{
+  float:left;
+}
+.artigos, .artigos:before{
+  width:70%;
+}
+.artigos:before{
+  position:absolute;
+  top:0;
+  left:0;
+  bottom:0;
+  background:#2a2436;
+  z-index:-1;
+  content:'';
+}
+.barra-lateral{
+  float:right;
+  font-size: 1.3vw;
+  padding: 1vw 0;
+}
+.barra-lateral, .barra-lateral:before{
+  width: 30%;
+}
+.barra-lateral:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right:0;
+  z-index: -1;
+  background: #2a2436;
+}
+.espacamento{
+  padding:1vw;
+}
 .arefhomepage, a{
   color: #ddd;
 }
-
-/*Paginas de Jogos*/
+ .imagem{
+   width: 50%;
+ }
+/*##################Paginas de Jogos##################*/
 
 .artigos2{
   float:left;
@@ -223,23 +222,21 @@ footer {
   width: 60%;
 }
 .barra-lateral2:before{
-   content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right:0;
-    z-index: -1;
-    background: #2a2436;
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right:0;
+  z-index: -1;
+  background: #2a2436;
 }
 .espacamento2{
   padding:2vw;
   font-size: 1vw;
 }
-
 .arefhomepage{
 color: #ddd;
 }
-
 .barra-lateral3{
   float: right;
 }
@@ -256,7 +253,7 @@ color: #ddd;
   background: #2a2436;
 }
 
-/*pagina A-Z*/
+/*##################A-Z##################*/
 .A_Zstyle{
   text-align: center;
 }
@@ -269,5 +266,5 @@ color: #ddd;
 #h1crossplay {
   color: #ddd;
 }
-
+/*##################ldalsldsl##################*/
 
