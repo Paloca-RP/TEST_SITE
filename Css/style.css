@@ -252,6 +252,20 @@ color: #ddd;
   z-index: -1;
   background: #2a2436;
 }
+  /*comments box*/
+
+.people{
+  border-bottom: 6px solid red;
+  background-color: black;
+}
+.coment_contente{
+  border-bottom: 6px solid red;
+  background-color: black;
+  width: 300px;
+  padding: 50px;
+  margin: 20px;
+}
+
 
 /*##################A-Z##################*/
 .A_Zstyle{
