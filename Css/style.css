@@ -253,19 +253,40 @@ color: #ddd;
   background: #2a2436;
 }
   /*comments box*/
-
-.people{
-  border-bottom: 6px solid red;
-  background-color: black;
-}
-.coment_contente{
-  border-bottom: 6px solid red;
-  background-color: black;
-  width: 300px;
-  padding: 50px;
-  margin: 20px;
-}
-
+  .barra-lateral4{/**/
+    float: baseline;
+  }
+  .barra-lateral4, .barra-lateral4:before{/**/
+    width: 100%;
+  }
+  .barra-lateral4:before{/**/
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right:0;
+    z-index: -1;
+    background: #2a2436;
+  }
+  .artigos3{
+    float:left;
+  }
+  .artigos3, .artigos3:before{
+    width: 10%;
+  }
+  .artigos3:before{
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    background:#2a2436;
+    z-index:-1;
+    content:'';
+  }
+  .corpo2{/* borda*/
+    position: relative;;
+    overflow:hidden;
+  }
 
 /*##################A-Z##################*/
 .A_Zstyle{
