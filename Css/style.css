@@ -268,26 +268,18 @@ color: #ddd;
     z-index: -1;
     background: #2a2436;
   }
-  .artigos3{
-    float:left;
-  }
-  .artigos3, .artigos3:before{
-    width: 10%;
-  }
-  .artigos3:before{
-    position:absolute;
-    top:0;
-    left:0;
-    bottom:0;
-    background:#2a2436;
-    z-index:-1;
-    content:'';
-  }
-  .corpo2{/* borda*/
-    position: relative;;
-    overflow:hidden;
-  }
-
+.corpo2{/* borda*/
+  position: relative;;
+  overflow:hidden;
+}
+.espacamento3{
+  padding: 3vw 15vw 8vw 10vw;
+  font-size: 1vw;
+}
+.imagem2{
+  float: left;
+  width: 15%;
+}
 /*##################A-Z##################*/
 .A_Zstyle{
   text-align: center;
