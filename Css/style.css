@@ -252,12 +252,24 @@ color: #ddd;
   z-index: -1;
   background: #2a2436;
 }
-  /*comments box*/
+  /*/*##################COMENTÁRIOS##################*/
+.labelcomentario{
+  background-color: white;
+  color: black;
+  border-radius: 7vw;
+}
+/*insert comentário*/
+
+
+
+
+/*SHOW Comentario*/
   .barra-lateral4{/**/
-    float: baseline;
+    align-content: center;
   }
   .barra-lateral4, .barra-lateral4:before{/**/
     width: 100%;
+    height: auto;
   }
   .barra-lateral4:before{/**/
     content: '';
@@ -266,19 +278,24 @@ color: #ddd;
     bottom: 0;
     right:0;
     z-index: -1;
-    background: #2a2436;
+    background: #3f364f;
   }
 .corpo2{/* borda*/
   position: relative;;
   overflow:hidden;
+  color: #ddd;
 }
 .espacamento3{
-  padding: 3vw 15vw 8vw 10vw;
+  padding: 2% 20% 0 10%;
   font-size: 1vw;
 }
 .imagem2{
   float: left;
-  width: 15%;
+  width: 10%;
+  border-radius: 50%;
+}
+#textcomment{
+  padding: 2% 20% 0 10%;-
 }
 /*##################A-Z##################*/
 .A_Zstyle{
