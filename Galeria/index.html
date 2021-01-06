@@ -1,0 +1,100 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Galeria</title>
+    <script>
+        function showtext1 (){
+            document.getElementById('image1').innerHTML = "Pessoa indiana"
+        }
+        function outtext1 (){
+            document.getElementById('image1').innerHTML = ""
+        }
+        function showtext2 (){
+            document.getElementById('image2').innerHTML = "RPG"
+        }
+        function outtext2 (){
+            document.getElementById('image2').innerHTML = ""
+        }
+        function showtext3 (){
+            document.getElementById('image3').innerHTML = "Paloca"
+        }
+        function outtext3 (){
+            document.getElementById('image3').innerHTML = ""
+        }
+        function showtext4 (){
+            document.getElementById('image4').innerHTML = "Rocket"
+        }
+        function outtext4 (){
+            document.getElementById('image4').innerHTML = ""
+        }
+        function showtext5 (){
+            document.getElementById('image5').innerHTML = "Paloca"
+        }
+        function outtext5 (){
+            document.getElementById('image5').innerHTML = ""
+        }
+        function showtext6 (){
+            document.getElementById('image6').innerHTML = "Zelda"
+        }
+        function outtext6 (){
+            document.getElementById('image6').innerHTML = ""
+        }
+
+    </script>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item">
+            <div>
+                <img src="image/image1.jpg" alt="image1" onmouseover="showtext1();" onmouseout="outtext1();" onclick="trocar1"><br>
+                <div class="textbox">
+                   <label id="image1"></label>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div>
+                <img src="image/image2.png" alt="image2" onmouseover="showtext2();" onmouseout="outtext2();" onclick="trocar2"><br>
+                <div class="textbox">
+                   <label id="image2"></label>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div>
+                <img src="image/image3.png" alt="image3" onmouseover="showtext3();" onmouseout="outtext3();" onclick="trocar3"><br>
+                <div class="textbox">
+                   <label id="image3"></label>
+                </div>
+            </div>
+        </div>  
+        <div class="grid-item">
+            <div>
+                <img src="image/image4.jpg" alt="image4" onmouseover="showtext4();" onmouseout="outtext4();" onclick="trocar4"><br>
+                <div class="textbox">
+                   <label id="image4"></label>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div>
+                <img src="image/image5.png" alt="image5" onmouseover="showtext5();" onmouseout="outtext5();" onclick="trocar5"><br>
+                <div class="textbox">
+                   <label id="image5"></label>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div>
+                <img src="image/image6.png" alt="image6" onmouseover="showtext6();" onmouseout="outtext6();" onclick="trocar6"><br>
+                <div class="textbox">
+                   <label id="image6"></label>
+                </div>
+            </div>
+        </div>   
+      </div>
+     
+</body>
+</html>
