@@ -259,56 +259,72 @@ color: #ddd;
   border-radius: 7vw;
 }
 /*insert comentário*/
-
-
-
+input[type = text]{
+  width: 30vw;
+  padding: 1vw 2vw;
+  margin: 0.5vw 0;
+  box-sizing: border-box;
+  border: 1px solid #555;
+  outline: none;
+}
+textarea {
+  width: 70%;
+  height: 12vw;
+  padding: 2vw 3vw;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+}
 
 /*SHOW Comentario*/
-  .barra-lateral4{/**/
-    align-content: center;
-  }
-  .barra-lateral4, .barra-lateral4:before{/**/
-    width: 100%;
-    height: auto;
-  }
-  .barra-lateral4:before{/**/
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right:0;
-    z-index: -1;
-    background: #3f364f;
-  }
+.barra-lateral4{/**/
+  align-content: center;
+}
+.barra-lateral4, .barra-lateral4:before{/**/
+  width: 100%;
+  height: auto;
+}
+.barra-lateral4:before{/**/
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right:0;
+  z-index: -1;
+  background: #3f364f;
+}
 .corpo2{/* borda*/
-  position: relative;;
-  overflow:hidden;
-  color: #ddd;
+position: relative;;
+overflow:hidden;
+color: #ddd;
 }
 .espacamento3{
-  padding: 2% 20% 0 10%;
-  font-size: 1vw;
+padding: 2% 20% 0 10%;
+font-size: 1vw;
 }
 .imagem2{
-  float: left;
-  width: 10%;
-  border-radius: 50%;
+float: left;
+width: 10%;
+border-radius: 50%;
 }
 #textcomment{
-  padding: 2% 20% 0 10%;
+padding: 2% 20% 0 10%;
 }
 /*##################A-Z##################*/
 .A_Zstyle{
-  text-align: center;
+text-align: center;
 }
 .ahref_line{
-  color: #ddd;
-  font-family: Arial;
+color: #ddd;
+font-family: Arial;
 }
 /*Crossplay page*/
 
 #h1crossplay {
-  color: #ddd;
+color: #ddd;
 }
 /*##################ldalsldsl##################*/
 
