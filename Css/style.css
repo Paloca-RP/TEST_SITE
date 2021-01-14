@@ -152,6 +152,14 @@ footer {
 }
 
 /*##################Index##################*/
+/*corpo de generos*/
+.corpo2{
+  position:relative;
+  overflow:hidden;
+  width: 1000;
+    left: 300;
+}
+/*corpo do resto*/
 .corpo{
   position:relative;
   overflow:hidden;
