@@ -3,7 +3,7 @@
 Para ao passar mudar a imagem o "N" é o numero da função */
 //Bioshock
 function mouseEmCima(imagem) {
-    imagem.src="../../images/Trocar_IMG/gow.jpg";
+    imagem.src="../../images/Trocar_IMG/BioShock.jpg";
 }
  function mouseFora(imagem) {  
     imagem.src="../../images/imagens_principais/BioShock.jpg"; 
@@ -64,4 +64,13 @@ function mouseEmCima8(imagem) {
  function mouseFora8(imagem) {  
     imagem.src="../../images/imagens_principais/"; 
 }
-/*#################_Trocar_Imagem_############################*/
+/*#################__############################*/
+
+function valida_form (){
+    if(document.getElementById("nome").value == "")
+    {
+        alert('Por favor, preencha os campos')
+        document.getElementById("nome").focus()
+        return false;
+    }
+}
