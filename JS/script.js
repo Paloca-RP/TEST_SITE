@@ -67,10 +67,10 @@ function mouseEmCima8(imagem) {
 /*#################__############################*/
 
 function valida_form (){
-    if(document.getElementById("nome").value == "")
+    if(document.getElementById("comentario").value == "")
     {
-        alert('Por favor, preencha os campos')
-        document.getElementById("nome").focus()
+        alert('Por favor, preencha o campo')
+        document.getElementById("comentario").focus()
         return false;
     }
 }

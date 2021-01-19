@@ -1,0 +1,45 @@
+create database Escola;
+use Escola;
+
+
+CREATE TABLE Alunos(
+    AlunosID int unsigned NOT NULL auto_increment PRIMARY KEY,
+    N_alunos_turma int(2) NOT NULL,
+    Localidade varchar(250) NOT NULL,
+    Codigo Postal int(10) unsigned NOT NULL,
+    Turma ENUM (‘Male’, ‘Female’) NOT NULL,
+    Nome_aluno varchar(250) NOT NULL
+);
+
+CREATE TABLE Cursos(
+    cursoID int unsigned NOT NULL auto_increment PRIMARY KEY,
+    Nome_curso varchar(80) NOT NULL,
+    Cordenador varchar(250) NOT NULL,
+    Carga_horaria varchar(80) unsigned NOT NULL
+);
+
+CREATE TABLE Turmas(
+    TurmaID int unsigned NOT NULL auto_increment PRIMARY KEY,
+    Nome_turma varchar(80) NOT NULL,
+    Curso varchar(80) NOT NULL,
+    Orientador varchar(250) unsigned NOT NULL
+);
+
+CREATE TABLE Curso_disciplina(
+    Curso int unsigned NOT NULL auto_increment,
+    disciplina int NOT NULL
+);
+
+CREATE TABLE disciplinas(
+    DisciplinasID int unsigned NOT NULL auto_increment PRIMARY KEY,
+    Nome_disciplina varchar(80) NOT NULL,
+    Carga_horaria_disciplina varchar(80) NOT NULL
+);
+
+CREATE TABLE Notas(
+    Aluno int unsigned NOT NULL auto_increment,
+    Turma varchar(80) NOT NULL,
+    disciplina varchar(80) NOT NULL,
+    Nota int(20) unsigned NOT NULL
+);
+
