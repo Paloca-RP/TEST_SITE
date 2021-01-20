@@ -64,7 +64,9 @@ function mouseEmCima8(imagem) {
  function mouseFora8(imagem) {  
     imagem.src="../../images/imagens_principais/"; 
 }
-/*#################__############################*/
+/*#################_BOTAO_DE_SUBMETER_COMENTARIOS_############################*/
+
+var lista=["mouse", "Disco Rigido", "monitor"]
 
 function valida_form (){
     if(document.getElementById("comentario").value == "")
@@ -73,4 +75,29 @@ function valida_form (){
         document.getElementById("comentario").focus()
         return false;
     }
+    else
+    {
+        for(let i = 0; i < lista.length;i++)
+        {
+let newParagraph = document.createElement("div")
+        newParagraph.classList.add("corpo")
+        
+        let newParagraph2 = document.createElement("div")
+         newParagraph2.classList.add("barra-lateral4")
+        
+         let newParagraph3 = document.createElement("div")
+            newParagraph3.classList.add("espacamento3")
+        
+            let newParagraph4 = document.createElement("p")
+            let textNode = document.createTextNode(lista[i])
+            newParagraph4.appendChild(textNode)
+            let element = document.getElementById("lista-comments")
+            element.appendChild(newParagraph4)
+
+
+        
+        }
+        
+    }
+
 }
