@@ -88,11 +88,11 @@
         <hr>
         <!--Insert Coments-->
         <div class="corpo">
-            <form id="form1" name="form1" method="post" action="#" onsubmit="return valida_form(this)">
+            <form id="insert">
                 <div class="barra-lateral4">
                     <div class="espacamento3">
-                        <input type="text" placeholder="Comment" id = "comentario" name = "comentario"/><br>
-                        <span><button onclick = "valida_form(this);">Submit</button></span>
+                        <input id = "comentario" type="text" placeholder="Comment" name = "comentario"/><br>
+                        <button onclick = "valida_form(this)">Submit</button>
                     </div>                
                 </div>
             </form>           
@@ -101,10 +101,18 @@
 
         <!--SHOW COMENTS-->
         <br>
-        <div class="lista-comments">
-                        
+        <div class="corpo">
+            <div class="barra-lateral4">
+                <div class="espacamento3">
+                    <form onload="mostrarLista()">
+                        <div id="lista-comments">             
+            
+                        </div> 
+                    </form>
+                </div>
             </div>
-       </div> 
+        </div>
+        
         <br><br>
          
         

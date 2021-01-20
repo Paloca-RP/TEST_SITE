@@ -66,38 +66,53 @@ function mouseEmCima8(imagem) {
 }
 /*#################_BOTAO_DE_SUBMETER_COMENTARIOS_############################*/
 
-var lista=["mouse", "Disco Rigido", "monitor"]
+var insert = document.getElementById("insert")
+insert.addEventListener('submit', valida_form)
 
-function valida_form (){
+function valida_form (event){
+    var lista = ["ola", "oal"]
+    var i 
+
     if(document.getElementById("comentario").value == "")
     {
         alert('Por favor, preencha o campo')
         document.getElementById("comentario").focus()
+        event.preventDefault()
         return false;
     }
     else
     {
-        for(let i = 0; i < lista.length;i++)
-        {
-let newParagraph = document.createElement("div")
-        newParagraph.classList.add("corpo")
-        
-        let newParagraph2 = document.createElement("div")
-         newParagraph2.classList.add("barra-lateral4")
-        
-         let newParagraph3 = document.createElement("div")
-            newParagraph3.classList.add("espacamento3")
-        
-            let newParagraph4 = document.createElement("p")
-            let textNode = document.createTextNode(lista[i])
-            newParagraph4.appendChild(textNode)
-            let element = document.getElementById("lista-comments")
-            element.appendChild(newParagraph4)
-
-
-        
-        }
-        
+        var produto = document.getElementById("comentario").value
+        if(produto.length != 0){
+            lista.push(produto)
+            document.getElementById("comentario").value=""
+            alert('Comentário inserido')
+        }       
     }
-
 }
+function mostrarLista (event){
+    for(let i = 0; i < lista.length;i++)
+        {
+            let newParagraph = document.createElement("p")
+            let textNode = document.createTextNode(lista[i])
+            newParagraph.appendChild(textNode)
+            let element = document.getElementById("lista-comments")
+            element.appendChild(newParagraph)
+            event.preventDefault()
+        }
+}
+/*############################################################## */
+/* let newParagraph = document.createElement("div")
+                newParagraph.classList.add("corpo")
+            
+            let newParagraph2 = document.createElement("div")
+                newParagraph2.classList.add("barra-lateral4")
+            
+            let newParagraph3 = document.createElement("div")
+                newParagraph3.classList.add("espacamento3")
+            
+            let newParagraph4 = document.createElement("p")
+                let textNode = document.createTextNode(lista[i])
+                newParagraph4.appendChild(textNode)
+            let element = document.getElementById("lista-comments")
+                element.appendChild(newParagraph4)*/
