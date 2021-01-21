@@ -66,40 +66,28 @@ function mouseEmCima8(imagem) {
 }
 /*#################_BOTAO_DE_SUBMETER_COMENTARIOS_############################*/
 
-var insert = document.getElementById("insert")
-insert.addEventListener('submit', valida_form)
+var lista=["mouse", "Disco Rigido", "monitor"]
 
-function valida_form (event){
-    var lista = ["ola", "oal"]
-    var i 
-
-    if(document.getElementById("comentario").value == "")
-    {
-        alert('Por favor, preencha o campo')
-        document.getElementById("comentario").focus()
-        event.preventDefault()
-        return false;
+function adicionarProducto (){
+    var produto = document.getElementById("comments").value
+    if(produto.length !== 0){
+        lista.push(produto)
+        document.getElementById("comments").value=""
+        alert("comments add");
     }
     else
-    {
-        var produto = document.getElementById("comentario").value
-        if(produto.length != 0){
-            lista.push(produto)
-            document.getElementById("comentario").value=""
-            alert('Comentário inserido')
-        }       
-    }
+        alert("Insira um Produto")
 }
-function mostrarLista (event){
+
+function mostrarLista (){
     for(let i = 0; i < lista.length;i++)
-        {
-            let newParagraph = document.createElement("p")
-            let textNode = document.createTextNode(lista[i])
-            newParagraph.appendChild(textNode)
-            let element = document.getElementById("lista-comments")
-            element.appendChild(newParagraph)
-            event.preventDefault()
-        }
+    {
+        let newParagraph = document.createElement("p")
+        let textNode = document.createTextNode(lista[i])
+        newParagraph.appendChild(textNode)
+        let element = document.getElementById("lista-comments")
+        element.appendChild(newParagraph)
+    }
 }
 /*############################################################## */
 /* let newParagraph = document.createElement("div")

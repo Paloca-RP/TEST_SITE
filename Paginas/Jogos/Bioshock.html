@@ -1,13 +1,13 @@
 <html lang="en">
+    <script type="text/javascript" src="../../JS/script.js"></script>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../Css/style.css">
-    <script type="text/javascript" src="../../JS/script.js"></script>
+    <link rel="stylesheet" href="../../Css/style.css">    
 
     <title>Bioshock</title>
 </head>
-<body>
+<body  onload="mostrarLista()">
     <ul class = "navbar">
         <h3 style="color: #ddd;">Menu</h3>
          <li class="droplist">
@@ -91,8 +91,8 @@
             <form id="insert">
                 <div class="barra-lateral4">
                     <div class="espacamento3">
-                        <input id = "comentario" type="text" placeholder="Comment" name = "comentario"/><br>
-                        <button onclick = "valida_form(this)">Submit</button>
+                        <input id = "comments" type="text" placeholder="Comment" name = "comments"/><br>
+                        <span><button onclick="adicionarProducto(); mostrarLista();">Inserir</button></span>
                     </div>                
                 </div>
             </form>           
@@ -104,7 +104,7 @@
         <div class="corpo">
             <div class="barra-lateral4">
                 <div class="espacamento3">
-                    <form onload="mostrarLista()">
+                    <form>
                         <div id="lista-comments">             
             
                         </div> 
