@@ -92,7 +92,7 @@
                 <div class="barra-lateral4">
                     <div class="espacamento3">
                         <input id = "comments" type="text" placeholder="Comment" name = "comments"/><br>
-                        <span><button onclick="adicionarProducto(); mostrarLista();">Inserir</button></span>
+                        <span><button onclick="adicionarProducto()">Inserir</button></span>
                     </div>                
                 </div>
             </form>           
@@ -104,9 +104,9 @@
         <div class="corpo">
             <div class="barra-lateral4">
                 <div class="espacamento3">
-                    <form>
+                    <form onsubmit="mostrarultimo()" >
                         <div id="lista-comments">             
-            
+                            <button type="submit">Reload</button> 
                         </div> 
                     </form>
                 </div>

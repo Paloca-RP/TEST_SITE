@@ -68,12 +68,14 @@ function mouseEmCima8(imagem) {
 
 var lista=["mouse", "Disco Rigido", "monitor"]
 
-function adicionarProducto (){
+function adicionarProducto (event){
     var produto = document.getElementById("comments").value
     if(produto.length !== 0){
         lista.push(produto)
         document.getElementById("comments").value=""
         alert("comments add");
+        
+        event.preventDefault()
     }
     else
         alert("Insira um Produto")
@@ -82,12 +84,26 @@ function adicionarProducto (){
 function mostrarLista (){
     for(let i = 0; i < lista.length;i++)
     {
-        let newParagraph = document.createElement("p")
+        let newParagraph = document.createElement("p")  
+        let newParagraph2 = document.createElement("hr")
         let textNode = document.createTextNode(lista[i])
-        newParagraph.appendChild(textNode)
+        newParagraph.appendChild(textNode)        
+        newParagraph2.appendChild(textNode)
         let element = document.getElementById("lista-comments")
         element.appendChild(newParagraph)
+        element.appendChild(newParagraph2)
     }
+}
+function mostrarultimo (event){
+    let newParagraph = document.createElement("p")
+    let newParagraph2 = document.createElement("hr")
+        let textNode = document.createTextNode(lista[lista.length - 1])
+        newParagraph.appendChild(textNode)
+        newParagraph2.appendChild(textNode)
+        let element = document.getElementById("lista-comments")
+        element.appendChild(newParagraph)
+        element.appendChild(newParagraph2)
+        event.preventDefault()
 }
 /*############################################################## */
 /* let newParagraph = document.createElement("div")
