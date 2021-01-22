@@ -68,17 +68,14 @@ function mouseEmCima8(imagem) {
 
 var lista=["mouse", "Disco Rigido", "monitor"]
 
-function adicionarProducto (event){
+function adicionarProducto (){
     var produto = document.getElementById("comments").value
-    if(produto.length !== 0){
-        lista.push(produto)
-        document.getElementById("comments").value=""
-        alert("comments add");
-        
-        event.preventDefault()
-    }
-    else
-        alert("Insira um Produto")
+        if(produto.length !== 0) {
+            lista.push(produto);
+            document.getElementById("comments").value = " ";
+            alert("comments add");
+        }else{
+        alert("Insira um Produto");}
 }
 
 function mostrarLista (){

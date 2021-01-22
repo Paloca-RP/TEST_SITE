@@ -88,15 +88,13 @@
         <hr>
         <!--Insert Coments-->
         <div class="corpo">
-            <form id="insert">
-                <div class="barra-lateral4">
+                    <div class="barra-lateral4">
                     <div class="espacamento3">
                         <input id = "comments" type="text" placeholder="Comment" name = "comments"/><br>
                         <span><button onclick="adicionarProducto()">Inserir</button></span>
                     </div>                
                 </div>
-            </form>           
-       </div> 
+        </div> 
 
 
         <!--SHOW COMENTS-->
@@ -104,11 +102,11 @@
         <div class="corpo">
             <div class="barra-lateral4">
                 <div class="espacamento3">
-                    <form onsubmit="mostrarultimo()" >
+                    
                         <div id="lista-comments">             
-                            <button type="submit">Reload</button> 
+                            <button onclick="mostrarultimo()">Reload</button> 
                         </div> 
-                    </form>
+                  
                 </div>
             </div>
         </div>
