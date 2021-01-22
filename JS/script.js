@@ -105,18 +105,16 @@ function mostrarultimo (event){
         element.appendChild(newParagraph2)
         event.preventDefault()
 }
-/*############################################################## */
-/* let newParagraph = document.createElement("div")
-                newParagraph.classList.add("corpo")
-            
-            let newParagraph2 = document.createElement("div")
-                newParagraph2.classList.add("barra-lateral4")
-            
-            let newParagraph3 = document.createElement("div")
-                newParagraph3.classList.add("espacamento3")
-            
-            let newParagraph4 = document.createElement("p")
-                let textNode = document.createTextNode(lista[i])
-                newParagraph4.appendChild(textNode)
-            let element = document.getElementById("lista-comments")
-                element.appendChild(newParagraph4)*/
+/*#################_registar_################## */
+function registar (event){
+    var produto = document.getElementById("comments").value
+    if(produto.length !== 0){
+        lista.push(produto)
+        document.getElementById("comments").value=""
+        alert("comments add");
+        
+        event.preventDefault()
+    }
+    else
+        alert("Insira um Produto")
+}
